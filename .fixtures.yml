@@ -1,0 +1,3 @@
+fixtures:
+  symlinks:
+    "eclipse": "#{source_dir}"
