@@ -1,4 +1,4 @@
-# Eclipse Puppet Module for Boxen
+# Eclipse Puppet Module for Boxen [![Build Status](https://travis-ci.org/boxen/puppet-eclipse.png)](https://travis-ci.org/boxen/puppet-eclipse)
 
 Install [Eclipse](http://www.eclipse.org/), an Open Source IDE aiming to provide a universal toolset for development.
 
