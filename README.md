@@ -5,7 +5,11 @@ Install [Eclipse](http://www.eclipse.org/), an Open Source IDE aiming to provide
 ## Usage
 
 ```puppet
-include eclipse
+# Eclipse for Java Developers
+include eclipse::java
+
+# Eclipse for JEE Developers
+include eclipse:jee
 ```
 
 ## Required Puppet Modules
