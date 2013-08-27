@@ -1,8 +1,8 @@
-# Public: Install Eclipse JEE to /Applications
+# Public: Install Eclipse GGTS to /Applications
 #
 # Examples
 #
-#   include eclipse::jee
+#   include eclipse::ggts
 class eclipse::ggts {
   package { 'Eclipse':
     provider => 'compressed_app',
