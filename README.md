@@ -9,10 +9,10 @@ Install [Eclipse](http://www.eclipse.org/), an Open Source IDE aiming to provide
 include eclipse::java
 
 # Eclipse for JEE Developers
-include eclipse:jee
+include eclipse::jee
 
 # Eclipse for Grails Developers
-include eclipse:ggts
+include eclipse::ggts
 ```
 
 ## Required Puppet Modules
