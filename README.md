@@ -13,6 +13,9 @@ include eclipse::jee
 
 # Eclipse for Grails Developers
 include eclipse::ggts
+
+# Eclipse for C++ Developers
+include eclipse::cpp
 ```
 
 ## Required Puppet Modules
