@@ -9,7 +9,7 @@
 #
 class eclipse::java($version='SR2') {
 
-  package { 'eclipse':
+  package { "Eclipse-Java-Kepler-${version}":
     provider => 'compressed_app',
     source   => "http://eclipse.mirror.triple-it.nl/technology/epp/downloads/release/kepler/${version}/eclipse-java-kepler-${version}-macosx-cocoa-x86_64.tar.gz",
   }
