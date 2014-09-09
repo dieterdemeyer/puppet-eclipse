@@ -7,11 +7,14 @@
 #     version => 'SR1'
 #   }
 #
-class eclipse::jee($version='SR2') {
+class eclipse::jee(
+  $release='luna',
+  $version='R',
+  $mirror='http://ftp.osuosl.org/pub/eclipse') {
 
-  package { "Eclipse-JEE-Kepler-${version}":
+  package { "Eclipse-JEE-${release}-${version}":
     provider => 'compressed_app',
-    source   => "http://eclipse.mirror.triple-it.nl/technology/epp/downloads/release/kepler/${version}/eclipse-jee-kepler-${version}-macosx-cocoa-x86_64.tar.gz",
+    source   => "${mirror}/technology/epp/downloads/release/${release}/${version}/eclipse-jee-${release}-${version}-macosx-cocoa-x86_64.tar.gz",
   }
 
 }

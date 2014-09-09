@@ -4,14 +4,19 @@
 #
 #   include eclipse::java
 #   class { 'eclipse::java':
+#     release => 'luna',
 #     version => 'SR1'
 #    }
 #
-class eclipse::java($version='SR2') {
+class eclipse::java(
+  $release='luna',
+  $version='R',
+  $mirror='http://ftp.osuosl.org/pub/eclipse') {
 
-  package { "Eclipse-Java-Kepler-${version}":
+
+  package { "Eclipse-Java-${release}-${version}":
     provider => 'compressed_app',
-    source   => "http://eclipse.mirror.triple-it.nl/technology/epp/downloads/release/kepler/${version}/eclipse-java-kepler-${version}-macosx-cocoa-x86_64.tar.gz",
+    source   => "${mirror}/technology/epp/downloads/release/${release}/${version}/eclipse-java-${release}-${version}-macosx-cocoa-x86_64.tar.gz",
   }
 
 }
