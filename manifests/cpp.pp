@@ -3,11 +3,20 @@
 # Examples
 #
 #   include eclipse::cpp
-class eclipse::cpp {
+#   class { 'eclipse::cpp':
+#     release => 'luna',
+#     version => 'R'
+#    }
+#
+class eclipse::cpp(
+  $release='luna',
+  $version='R',
+  $mirror='http://ftp.osuosl.org/pub/eclipse') {
 
-  package { 'Eclipse-CPP-Kepler-SR1':
+
+  package { "Eclipse-CPP-${release}-${version}":
     provider => 'compressed_app',
-    source   => 'http://mirrors.xmission.com/eclipse/technology/epp/downloads/release/kepler/SR1/eclipse-cpp-kepler-SR1-macosx-cocoa-x86_64.tar.gz',
+    source   => "${mirror}/technology/epp/downloads/release/${release}/${version}/eclipse-cpp-${release}-${version}-macosx-cocoa-x86_64.tar.gz",
   }
 
 }
