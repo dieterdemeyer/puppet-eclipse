@@ -5,7 +5,7 @@
 #   include eclipse::java
 #   class { 'eclipse::java':
 #     release => 'luna',
-#     version => 'SR1'
+#     version => 'R'
 #    }
 #
 class eclipse::java(
